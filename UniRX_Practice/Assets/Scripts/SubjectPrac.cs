@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class SubjectPrac : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         Subject<string> subject = new Subject<string>();
@@ -22,11 +21,5 @@ public class SubjectPrac : MonoBehaviour
         subject2.Subscribe(msg => Debug.Log($"asdfasdfasf{msg}"));
         
         subject2.OnNext(125);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
