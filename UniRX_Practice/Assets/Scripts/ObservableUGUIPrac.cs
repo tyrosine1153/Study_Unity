@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Globalization;
+using System;
 using UniRx;
-using UniRx.Triggers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +14,7 @@ public class ObservableUGUIPrac : MonoBehaviour
     void Start()
     {
         button.OnClickAsObservable().Subscribe();
+        
 
         inputField.OnValueChangedAsObservable()./*Where(msg => msg == "정답").*/Subscribe(msg => text1.text = msg);
         inputField.OnEndEditAsObservable().Subscribe();

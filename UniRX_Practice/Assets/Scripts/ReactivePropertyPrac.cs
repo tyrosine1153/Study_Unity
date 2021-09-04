@@ -16,6 +16,8 @@ public class ReactivePropertyPrac : MonoBehaviour
 
         rp.Subscribe(value => Debug.Log($"rp value changed : {value}"));
 
+        rp.AsObservable().Subscribe();
+        
         rp.Value = 10;
         
     }
