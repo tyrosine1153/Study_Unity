@@ -104,20 +104,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "27b4b7c08df141f2b60f0378b234eb5c"
-                },
-                "m_SlotId": 4
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "de5a151328c34d84afb392e55811d73c"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "a5ca831733f24e71b1086254ac2ecc7d"
                 },
                 "m_SlotId": 0
@@ -132,8 +118,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 238.00003051757813,
-            "y": -39.0000114440918
+            "x": 262.0,
+            "y": -45.0
         },
         "m_Blocks": [
             {
@@ -287,10 +273,10 @@
         "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -793.0,
-            "y": 34.999996185302737,
+            "x": -542.0,
+            "y": 261.0,
             "width": 208.0,
-            "height": 437.0
+            "height": 341.0
         }
     },
     "m_Slots": [
@@ -405,8 +391,8 @@
         "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -766.0,
-            "y": 79.99998474121094,
+            "x": -511.0,
+            "y": 290.0,
             "width": 208.0,
             "height": 341.0
         }
@@ -953,10 +939,10 @@
         "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -824.0,
-            "y": -11.999999046325684,
+            "x": -558.0,
+            "y": 233.0,
             "width": 208.0,
-            "height": 341.0
+            "height": 340.0
         }
     },
     "m_Slots": [
@@ -1371,8 +1357,8 @@
     "m_ObjectId": "f4f80e68b8ba4317be5249429ff9dc01",
     "m_Title": "Leather",
     "m_Position": {
-        "x": -849.0,
-        "y": -71.0
+        "x": -583.0,
+        "y": 174.0
     }
 }
 
