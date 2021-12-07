@@ -333,7 +333,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -721,10 +721,6 @@ PrefabInstance:
     - target: {fileID: 4301702370334693903, guid: 6d9c91c43ed57644b836e08ff98eb442, type: 3}
       propertyPath: m_Name
       value: View - HOME
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301702370334693903, guid: 6d9c91c43ed57644b836e08ff98eb442, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4301702370398647271, guid: 6d9c91c43ed57644b836e08ff98eb442, type: 3}
       propertyPath: m_AnchorMax.y
