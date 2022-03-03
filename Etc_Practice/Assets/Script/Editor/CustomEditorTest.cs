@@ -13,11 +13,17 @@ public class CustomEditorTest : Editor
 
     private void OnEnable()
     {
+        SceneView.duringSceneGui += OnSceneGUI;
         _customScript = (CustomScript) target;
 
         _targetProperty = serializedObject.FindProperty(nameof(_customScript.target));
         _myNameProperty = serializedObject.FindProperty(nameof(_customScript.myName));
         _myHpProperty = serializedObject.FindProperty(nameof(_customScript.myHp));
+    }
+
+    private void OnDisable()
+    {
+        SceneView.duringSceneGui -= OnSceneGUI;
     }
 
     public override void OnInspectorGUI()
@@ -39,5 +45,37 @@ public class CustomEditorTest : Editor
         EditorGUILayout.EndHorizontal();
         
         serializedObject.ApplyModifiedProperties();
+    }
+    
+    private void OnSceneGUI(SceneView sceneView)
+    {
+        Handles.Label(_customScript.transform.position, _customScript.gameObject.name);
+
+        Handles.color = Color.red;
+        var customScripts = FindObjectsOfType<CustomScript>();
+        foreach (var customScript in customScripts)
+        {
+            if (_customScript == customScript) continue;
+            
+            var position = customScript.transform.position;
+            Handles.DrawLine(_customScript.transform.position, position);
+                
+            Handles.DrawWireCube(position, Vector3.one);
+        }
+        
+        Handles.color = Color.green;
+        Handles.DrawWireCube(_customScript.transform.position, Vector3.one * 2);
+        Handles.color = Color.white;
+        
+        Handles.BeginGUI();
+        if(GUILayout.Button("Move Right"))
+        {
+            _customScript.transform.position += Vector3.right;
+        }
+        if(GUILayout.Button("Move Left"))
+        {
+            _customScript.transform.position += Vector3.left;
+        }
+        Handles.EndGUI();
     }
 }
