@@ -26,14 +26,7 @@ public class CustomEditorTest : Editor
 
         EditorGUILayout.PropertyField(_targetProperty);
 
-        if (_myHpProperty.intValue < 30)
-        {
-            GUI.color = Color.red;
-        }
-        else
-        {
-            GUI.color = Color.green;
-        }
+        GUI.color = _myHpProperty.intValue < 30 ? Color.red : Color.green;
         _myHpProperty.intValue = EditorGUILayout.IntSlider("HP 값", _myHpProperty.intValue, 0, 100);
 
         EditorGUILayout.BeginHorizontal();

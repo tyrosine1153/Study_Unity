@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MyWindow : EditorWindow
 {
-    [MenuItem("Window/My Window")]
+    [MenuItem("Window/Editor Practice/My Window")]
     public static void ShowWindow()
     {
         var window = GetWindow<MyWindow>("My Window");
@@ -28,7 +28,5 @@ public class MyWindow : EditorWindow
         style.hover.textColor = Color.red;
         
         GUILayout.Button(content, style);
-
-        
     }
 }
