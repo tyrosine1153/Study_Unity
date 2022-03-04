@@ -9,9 +9,6 @@ public class EditorCopy : EditorWindow
     private Editor[] duplicatedEditorDetails;  // 복제한 컴포넌트 표시 에디터
     private List<bool> detailFoldout = new List<bool>();  // 토글 상태 저장
 
-    private string stringvalue = "";
-    private int intvalue = 0;
-
     [MenuItem("Window/Editor Practice/Editor Copy")]
     public static void ShowWindow()
     {

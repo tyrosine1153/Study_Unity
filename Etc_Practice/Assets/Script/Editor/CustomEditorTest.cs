@@ -49,6 +49,9 @@ public class CustomEditorTest : Editor
     
     private void OnSceneGUI(SceneView sceneView)
     {
+        if(_customScript == null)
+            return;
+
         Handles.Label(_customScript.transform.position, _customScript.gameObject.name);
 
         Handles.color = Color.red;
